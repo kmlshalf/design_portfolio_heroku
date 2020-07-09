@@ -1,0 +1,210 @@
+
+.projectContainer {
+	margin: 0 auto;
+	padding: 0;
+	font-size: 18px;
+}
+
+b {
+	font-weight: 700;
+}
+
+.backbutton {
+	text-decoration: none;
+	margin-left: 60px;
+	color: #2B2A2A;
+	font-size: 16px;
+}
+
+.backbutton:hover {
+	color: #F3613B;
+	transition: 0.3s;
+}
+
+.backbuttoncontainer {
+	margin-top: -15px;
+}
+
+.bottom {
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+/*SECTION HEADERS*/
+
+.hline {
+	width: 890px;
+	height: 1px;
+	background: #F3613B;
+	margin-top: 2px;
+}
+
+.headerContainer {
+	color: #F3613B;
+	font-size: 18px;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+/*HERO BANNER FORMATTING*/
+
+.heroImage {
+	width: 600px;
+	float: right;
+}
+
+.heroTitle {
+	font-size: 36px;
+	font-weight: 900;
+}
+
+.heroSubtext {
+	font-weight: 20px;
+	width: 650px;
+}
+
+.titleContainer {
+	padding-top: 150px;
+	height: 500px;
+	float: left;
+}
+
+.heroContainer {
+	background: #FFC138;
+	display: inline-block;
+	width: 100%;
+	height: 500px;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 50px;
+	margin-top: 10px;	
+}
+
+/*BUTTON FORMATTING*/
+
+.projlist li {
+	padding-bottom: 20px;
+}
+
+.buttondiv {
+	text-align: center;
+}
+.view {
+	margin-top: 42px;
+	margin-bottom: 42px;
+	background:none;
+	/*text-align: center;*/
+	width: 180px;
+	height: 40px;
+	border-color: #F3613B;
+	border-style: solid;
+	border-radius: 30px;
+	color: #F3613B;
+	font-weight: 500;
+	font: inherit;
+	font-size: 20px;
+}
+
+.view:focus {
+	outline:0;
+}
+
+.view:hover {
+	cursor: pointer;
+	background: #F3613B;
+	color: white;
+	transition: 0.3s;
+}
+
+
+/*PAGE CONTENT FORMATTING START*/
+.caseContent {
+	width: 900px;
+	padding: 18px;
+	margin: 0 auto;
+}
+
+.highlight {
+	font-size: 24px;
+	color: #F3613B;
+	font-weight: 500;
+	margin-top: 16px;
+}
+
+/*titles used within sections*/
+.title2 {
+	font-weight: 700;
+	padding-bottom: 6px;
+}
+
+/* sections marked by underlined headers*/
+.section { 
+	margin-bottom: 80px;
+ }
+
+ .video {
+ 	padding-top: 24px;
+ 	text-align: center;
+ }
+
+.centeredimg {
+	width: 550px;
+	margin-left: 155px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+/*text paired with title2 text*/
+.titleandtext{
+	margin-top: 30px;
+}
+
+/*content that goes on top of any instance of background*/
+.divcontent {
+	position: absolute;
+	z-index: 1;
+	width: 900px;
+	padding-top: 36px;
+}
+
+/*for when there is a light grey background*/
+.background {
+	position: relative;
+	background-color: #F9F4EC;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-left: -300px;
+	width: 170%;
+}
+
+.left {
+	float: left;
+	margin-right: 80px;
+}
+
+.right {
+	float: right;
+	margin-left: 80px;
+}
+
+.text {
+	padding-top: 80px;
+}
+
+/*side by side images and text*/
+.imageandtext {
+	display: inline-block;
+	/*determines distance between blocks of side by side image and text*/
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+/*For when there needs to be a wider buffer between divs (used mainly in Final Design)*/
+.buffer {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+
+ /*PAGE CONTENT FORMATTING END*/

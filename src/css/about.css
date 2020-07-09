@@ -1,0 +1,50 @@
+.content {
+  /*flex: 1;
+  display: flex;*/
+  /*justify-content: center;*/
+  /*padding-right: 200px;*/
+  /*padding-left: 15%;
+  padding-top: 20px;*/
+}
+
+
+h3 {
+	/*font-weight: 500;*/
+	font-size: 48px;
+	/*padding: 20px 300px 20px 0px;*/
+}
+
+p.title {
+	padding-top: 10px;
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.about-container {
+	display: flex;
+	margin: 0 auto;
+	margin-right: 15%
+}
+
+.about-topsection {
+	display: inline-flex;
+}
+
+.prof_img {
+	height: 512px;
+	padding-right: 10%;
+	padding-top: 20px;
+}
+
+.social {
+	height: 40px;
+	padding-right: 15px;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+
+.mail {
+	height: 36px;
+	padding-bottom: 2px;
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');*/
+
+*{
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+body {
+  /*padding: 20px;*/
+  padding-top: 5px;
+  margin: 0 auto;
+  font-family: Rubik;
+  color: #2B2A2A;
+  background-color: #FFFAF2;
+  animation-name: fallingdown;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+
+  /*overflow-x: hidden;*/
+}
+
+/*Basic content CSS for all pages (className content in Main.js)*/
+/*.content {*/
+  /*flex: 1;
+  display: flex;*/
+  /*justify-content: center;*/
+  /*padding-right: 200px;*/
+  /*padding-left: 15%;
+  padding-top: 20px;*/
+/*}*/
+
+
+/*NAVBAR CSS START*/
+.navWrapper {
+	/*display: flex-inline;*/
+}
+
+/*navbar logo*/
+.logo {
+	height:80px;
+}
+
+.logo:hover {
+  opacity: 70%;
+  transition: 0.5s;
+}
+
+ul.mainnav li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  text-decoration: none;
+  float: right;
+}
+
+ul.mainnav li a {
+  text-decoration: none;
+  padding: 18px;
+  display: inline-block;
+  color: #464541;
+  font-size: 16px;
+}
+
+.mainnav {
+  padding-right: 20px;
+}
+
+.active{
+	font-weight: 500;
+}
+/*NAVBAR CSS END*/
+
+
+/*FOOTER PAGE CSS START*/
+ul.footerContent li{
+  text-decoration: none;
+  list-style-type: none;
+  padding-top: 4px;
+}
+
+ul.footerContent li a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #2B2A2A;
+}
+
+.footerContent{
+  padding-left: 64px;
+  /*padding-top: 30px;*/
+}
+
+ul.footerContent li a:hover{
+  cursor: pointer;
+  opacity: 70%;
+  transition: 0.3s;
+}
+
+.footerWrapper {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  /*padding-left: 150px;*/
+  display: inline-flex;
+  margin: 0 auto;
+}
+
+.center {
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 39px;
+  font-weight: 500;
+  color: #FF805F;
+  /*width: 30%;*/
+}
+/*FOOTER PAGE CSS END*/
+
+@keyframes fallingdown {
+  0% {
+    opacity: 0%;
+    margin-top: -30px;
+  }
+  100% {
+    margin: 0 auto;
+    opacity: 100%;
+  }
+}

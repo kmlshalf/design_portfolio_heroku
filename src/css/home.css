@@ -1,0 +1,239 @@
+/*HOME PAGE CSS START*/
+.content {
+  flex: 1;
+  display: flex;
+  /*justify-content: center;*/
+  /*padding-right: 200px;*/
+  padding-left: 15%;
+  padding-top: 20px;
+}
+
+
+.home {
+  margin-right: 110px;
+}
+/*Red circle behind tagline*/
+.redcircle {
+  height: 290px;
+  position: absolute;
+  right: 210px;
+  top: 130px;
+  animation-name: fallingup;
+  animation-duration: 1.5s;
+}
+
+/*Squiggles behind tagline*/
+.squiggles {
+  height: 360px;
+  position: absolute;
+  left: 120px;
+  top: 130px;
+  animation-name: fallingup;
+  animation-duration: 1.5s;
+}
+
+.redcircle:hover {
+  height: 300px;
+  cursor: pointer;
+}
+
+.squiggles:hover {
+  height: 370px;
+  cursor: pointer;
+}
+
+#tagline {
+  font-size: 75px;
+  font-weight: 700;
+  margin-top: 30px;
+  z-index:1;
+  pointer-events: none;
+  position:relative; 
+  width: 80%;
+}
+
+.subheader {
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1; 
+  /*padding-top: 8px;*/
+}
+
+/*Button component formatting start*/
+.toSections {
+  width: 215px;
+  height: 94px;
+  background: url(../img/button.svg) no-repeat;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: rubik;
+  border: none;
+  cursor: pointer;
+}
+
+ul.buttons {
+  display: inline-flex;
+  margin: 0;
+  margin-left: -50px;
+  padding-bottom: 80px;
+
+}
+
+ul.buttons li {
+  list-style-type: none;
+  padding-right: 32px;
+}
+
+.toSections:hover {
+  color: #2B2A2A;
+  filter: invert(0%) sepia(0%) saturate(90%) hue-rotate(360deg) brightness(100%) contrast(120%);
+  /*text-decoration: underline;*/
+  /*font-size: 21px;*/
+}
+
+.toSections:focus {
+  outline: 0;
+}
+/*Button component formatting end*/
+
+/*Project components formatting start*/
+.underline {
+  width: 150px;
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+
+.container {
+  /*padding-bottom: 80px;*/
+}
+
+.col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.projectContainer {
+  /*padding: 24px 12px 0px 0px;*/
+  padding: 3% 1%;
+  width: 100%;
+  font-size: 18px;
+}
+/*top right bottom left*/
+
+.square {
+  /*height: 350px;
+  width: 450px;*/
+  height: 90%;
+  width: 90%;
+  /*background-color: #FF805F;*/
+  position: relative;
+}
+
+.projImg {
+  height: 99%;
+  width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    color: #FFF;
+    font-size: 24px;
+    font-size: 2.8vw;
+    /*padding: 100px 50px;*/
+    padding: 6vw 3vw 0px;
+    height: 98.7%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.square:hover .overlay{
+    opacity: 1;
+    background: rgba(0,0,0,.7);
+    transition:0.3s;
+}
+
+.proj-link{
+  text-decoration: none;
+  color: #2B2A2A;
+  font-size: 18px;
+}
+
+p {
+  margin-top: 6px;
+}
+/*Project component formatting end*/
+
+.upButton {
+  position: fixed;
+}
+
+/*comment decor css start*/
+.comment {
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 45px;
+  top: 25%;
+  pointer-events: none;
+}
+
+.accent {
+  position: absolute;
+}
+
+.accent:hover {
+  cursor: pointer;
+}
+
+.yellowoval1:hover {
+  width: 430px;
+}
+
+.redoval:hover {
+  width: 200px;
+}
+
+.yellowoval2:hover {
+  width: 450px;
+}
+
+.yellowoval1 {
+  padding-top: 60px;
+}
+
+.redoval {
+  padding-top: 150px;
+}
+
+.yellowoval2 {
+  padding-top: 80px;
+  padding-left: 150px;
+}
+/*comment decor css end*/
+/*HOME PAGE CSS END*/
+
+
+@keyframes fallingup {
+  0% {
+    opacity: 0%;
+    margin-top: 30px;
+  }
+  100% {
+    margin-top: 50;
+    opacity: 100%;
+  }
+}
