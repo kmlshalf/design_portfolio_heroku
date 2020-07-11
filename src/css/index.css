@@ -43,9 +43,10 @@ body {
 }
 
 .logo:hover {
-  opacity: 70%;
+  opacity: 0.7;
   transition: 0.5s;
 }
+
 
 ul.mainnav li {
   display: inline-block;
@@ -72,6 +73,13 @@ ul.mainnav li a {
 }
 /*NAVBAR CSS END*/
 
+.general_links {
+  font-weight: 500;
+}
+
+.general_links:hover {
+  opacity: 0.7;
+}
 
 /*FOOTER PAGE CSS START*/
 ul.footerContent li{
@@ -93,7 +101,7 @@ ul.footerContent li a{
 
 ul.footerContent li a:hover{
   cursor: pointer;
-  opacity: 70%;
+  opacity: 0.7;
   transition: 0.3s;
 }
 

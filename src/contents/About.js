@@ -18,7 +18,7 @@ class About extends Component {
         		<p>I’ll go first.  I am a designer and recent UC Berkeley grad currently located in my hometown Oakland, California.  
         		I believe in the power of design to impact, educate, and connect, and am working towards facilitating conversations and 
             growth through my own work.</p>
-            <p>I am currently a K-12 Education Programs intern at the <a href="https://designmuseumfoundation.org/" target="_blank">Design Museum Everywhere</a>, where I'm 
+            <p>I am currently a K-12 Education Programs intern at the <a className="general_links" href="https://designmuseumfoundation.org/" target="_blank">Design Museum Everywhere</a>, where I'm 
             playing with virtual design and creative education!</p>
             <p><i>Interested in learning more?  Let's chat!</i></p>
         		<div className="socials">
