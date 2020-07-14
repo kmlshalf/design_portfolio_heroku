@@ -22,7 +22,7 @@ class About extends Component {
             playing with virtual design and creative education!</p>
             <p><i>Interested in learning more?  Let's chat!</i></p>
         		<div className="socials">
-              <a className="mail" href={"mailto:"+"mimishalf@mac.com"}><img src={Mail} className="social mail"></img></a>
+              <a className="mail" href={"mailto:"+"katharine.shalf@berkeley.edu"}><img src={Mail} className="social mail"></img></a>
         			<a href="https://www.instagram.com/pamimus/" target="_blank"><img src={Instagram} className="social instagram"></img></a>
         			<a href="https://www.linkedin.com/in/mimi-shalf-748b66132/" target="_blank"><img src={LinkedIn} className="social linkedin"></img></a>
         		</div>

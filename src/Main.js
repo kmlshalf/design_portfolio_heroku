@@ -12,12 +12,12 @@ import Nav from "./components/Nav";
 
 //Projects
 import Bumblebee from "./projects/BumblebeeSpaces";
-import UP from "./projects/UbiquityPress";
-import Bampfa from "./projects/BampfaAr";
+// import UP from "./projects/UbiquityPress";
+// import Bampfa from "./projects/BampfaAr";
 import Dialpad from "./projects/Dialpad";
-import Ethical from "./projects/EthicalApparel";
-import BI from "./projects/BerkeleyInnovation";
-import CritMaking from "./projects/Critmaking";
+// import Ethical from "./projects/EthicalApparel";
+// import BI from "./projects/BerkeleyInnovation";
+// import CritMaking from "./projects/Critmaking";
 
 
 class Main extends React.Component {
@@ -29,6 +29,10 @@ showNav(){
 	}  
 }
 // <Route path="/ubiquitypress" component={UP}/>
+// <Route path="/bampfa" component={Bampfa}/>
+// <Route path="/ethicalapparel" component={Ethical}/>
+// <Route path="/berkeleyinnovation" component={BI}/>
+// <Route path="/criticalmaking" component={CritMaking}/>
 
   render () {
     return (
@@ -40,11 +44,7 @@ showNav(){
 	        <Route path="/doodles" component={Doodles}/> 
 	      </div>
 	      	<Route path="/bumblebeespaces" component={Bumblebee}/>
-	        <Route path="/bampfa" component={Bampfa}/>
-	        <Route path="/ethicalapparel" component={Ethical}/>
-	        <Route path="/berkeleyinnovation" component={BI}/>
 	        <Route path="/dialpad" component={Dialpad}/>
-	        <Route path="/criticalmaking" component={CritMaking}/>
       </div>
     )
   }

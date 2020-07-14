@@ -50,7 +50,7 @@ class Bumblebee extends Component {
     const bgstyle2 = {height: '1450px'};
 
     const bgstyle3 = {height: '450px'};
-
+ 
     return (
       <div className="projectContainer">
         <div className="backbuttoncontainer">
@@ -59,7 +59,6 @@ class Bumblebee extends Component {
         </div>
       	<HeroBanner title="Bumblebee Spaces" subtext="Improving the customer viewing experience / Website design" img=<img src={Hero} className="heroImage"></img>/>
       	<div className="buttondiv"><button className="view" onClick={this.scrollToEnd}>View Prototype</button></div>
-        <div className="sideNav"></div>
         <div className="caseContent">
       		<div className="section summary">
       			<p>In my spring 2019 semester at UC Berkeley, 

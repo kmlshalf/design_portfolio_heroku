@@ -7,7 +7,7 @@ class Footer extends Component {
     	<div className="footerWrapper">
     		<h1>Hey You, Let's Chat!</h1>
     		<ul className="footerContent">
-    			<li><a href={"mailto:"+this.props.email}>mimishalf@mac.com</a></li>
+    			<li><a href={"mailto:"+this.props.email}>katharine.shalf@berkeley.edu</a></li>
     			<li>Coded with love and pain in ReactJS</li>
     		</ul>
     	</div>

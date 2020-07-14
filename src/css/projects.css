@@ -7,7 +7,7 @@
 
 b {
 	font-weight: 700;
-}
+} 
 
 .backbutton {
 	text-decoration: none;
@@ -91,7 +91,7 @@ b {
 }
 .view {
 	margin-top: 42px;
-	margin-bottom: 42px;
+	/*margin-bottom: 42px;*/
 	background:none;
 	/*text-align: center;*/
 	width: 180px;
@@ -103,6 +103,9 @@ b {
 	font-weight: 500;
 	font: inherit;
 	font-size: 20px;
+}
+.summary {
+	margin-top: 36px;
 }
 
 .view:focus {
@@ -129,12 +132,14 @@ b {
 	color: #F3613B;
 	font-weight: 500;
 	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 /*titles used within sections*/
 .title2 {
 	font-weight: 700;
 	padding-bottom: 6px;
+	padding-top: 16px;
 }
 
 /* sections marked by underlined headers*/
@@ -206,5 +211,60 @@ b {
 	margin-bottom: 40px;
 }
 
+/*COLUMN-DEPENDENT GALLERY IMAGES*/
+
+/*column-dependent image gallery*/
+
+.column {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.column img {
+	display: block;
+}
+
+.one img {
+	width: 240px;
+}
+
+.zero img {
+	width: 320px;
+}
+
+.two img {
+	width: 400px;
+}
+
+.three img {
+	width: 428px;
+}
+
+/*row-dependent image gallery*/
+
+.row {
+	padding: 0;
+}
+
+.row img {
+	display: inline-block;
+}
+
+.rone img {
+	height: 260px;
+}
+
+.rtwo img {
+	height: 540px;
+}
+
+.rthree img {
+	height: 273px;
+}
+
+.rfour img {
+	height: 665px;
+}
 
  /*PAGE CONTENT FORMATTING END*/

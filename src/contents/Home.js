@@ -123,15 +123,15 @@ class Home extends React.Component {
                 </div>
                 <div className="col">
                    <ProjectItem image=<img src={Ubiquity} className="projImg"></img> 
-                                                                                desc="Tools for Academic Publishing -- Currently Under Construction" 
+                                                                                desc="(UNDER CONSTRUCTION) Tools for Academic Publishing" 
                                                                                 name="Ubiquity Press • UX Design Internship" />
                 </div>
               </div>
               <div className="row 2">
                 <div className="col">
-                   <Link to="/bampfa" className="proj-link"><ProjectItem image=<img src={Bampfa} className="projImg"></img>
+                   <ProjectItem image=<img src={Bampfa} className="projImg"></img>
                                                                          name="Bampfa AR • UI/Interaction Design" 
-                                                                         desc="Creating an Interactive AR Exhibit Experience (Tablet)"/></Link>
+                                                                         desc="(UNDER CONSTRUCTION) Creating an Interactive AR Exhibit Experience (Tablet)"/>
                 </div>
                 <div className="col">
                   <Draggable>
@@ -154,9 +154,9 @@ class Home extends React.Component {
                                       desc="Building Dialpad's Illustration Style"/></Link>
                 </div>
                 <div className="col">
-                   <Link to="/ethicalapparel" className="proj-link"><ProjectItem image=<img src={Ethical} className="projImg"></img> 
+                  <ProjectItem image=<img src={Ethical} className="projImg"></img> 
                                                                                  name="EthiCAL Apparel • Apparel Design" 
-                                                                                 desc= "Leading + Designing for a Student-Run Apparel Business"/></Link>
+                                                                                 desc= "(UNDER CONSTRUCTION) Leading + Designing for a Student-Run Apparel Business"/>
                 </div>
               </div>
               <div className="row 2">
@@ -167,9 +167,9 @@ class Home extends React.Component {
                   <p className="comment">Playing with graphic design across different forms.</p>
                 </div>
                 <div className="col">
-                     <Link to="/berkeleyinnovation" className="proj-link"><ProjectItem image=<img src={Bi} className="projImg"></img>
+                     <ProjectItem image=<img src={Bi} className="projImg"></img>
                                                                                       name="Berkeley Innovation • Marketing & Graphic Design" 
-                                                                                      desc="Creating the Visual and Online Presence for a Student-Run Design Org"/></Link>
+                                                                                      desc="(UNDER CONSTRUCTION) Creating the Visual and Online Presence for a Student-Run Design Org"/>
                 </div>
               </div>
           </div>
@@ -180,9 +180,9 @@ class Home extends React.Component {
             </div>
               <div className="row">
                 <div className="col">
-                  <Link to="/criticalmaking" className="proj-link"><ProjectItem image=<img src={CritMaking} className="projImg"></img>
+                  <ProjectItem image=<img src={CritMaking} className="projImg"></img>
                                                                                 name="Critical Making • Graduate Class in New Media" 
-                                                                                desc="Exploring Design Through Making and New Media"/></Link>
+                                                                                desc="(UNDER CONSTRUCTION) Exploring Design Through Making and New Media"/>
                 </div>
                 <div className="col">
                   <Draggable>
@@ -193,7 +193,7 @@ class Home extends React.Component {
               </div>
           </div>
         </div>
-        <Footer email="mimishalf@mac.com" />
+        <Footer email="katharine.shalf@berkeley.edu" />
       </div>
     );
   }
