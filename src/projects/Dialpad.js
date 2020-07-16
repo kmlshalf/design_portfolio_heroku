@@ -62,7 +62,8 @@ class Dialpad extends React.Component {
             gallery3: this.props.gallery3,
             objects: this.props.objects,
             social: this.props.social,
-            datasheets: this.props.datasheets
+            datasheets: this.props.datasheets,
+            fun: this.props.fun
         };
 
     } 
@@ -199,15 +200,18 @@ class Dialpad extends React.Component {
 
               <div className="title2">And completed some small, fun tasks where I got to play a little bit more.</div>
 
-                <div className="col-container buffer">
-                <div className="column two">
-                  <img src={misc01}></img>
-                </div>
-                <div className="column three">
-                  <img src={misc02}></img>
-                  <img src={misc03}></img>
-                </div>
-              </div>
+                <div className="gallery buffer" style={{
+                    display: "block",
+                    minHeight: "1px",
+                    width: "100%",
+                    overflow: "auto"}}>
+               <Gallery
+                images={this.state.fun}
+                enableLightbox={true}
+                enableImageSelection={false}
+                margin={0}
+                rowHeight={500}/>
+             </div>
 
               <p>Overall, I enjoyed my time as an intern and learned a lot about best visual design practices and creating production-ready visual content.  
               Thank you Dialpad for the experience!  </p>
@@ -364,6 +368,20 @@ Dialpad.defaultProps = {
         {
             src: datasheet3,
             thumbnail: datasheet3
+        }
+    ],
+    fun: [
+        {
+            src: misc01,
+            thumbnail: misc01
+        },   
+        {
+            src: misc02,
+            thumbnail: misc02
+        },
+        {
+            src: misc03,
+            thumbnail: misc03
         }
     ]
 };
