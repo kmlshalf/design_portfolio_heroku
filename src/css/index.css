@@ -126,6 +126,10 @@ h1 {
   color: #FF805F;
   /*width: 30%;*/
 }
+
+.doodlegallery {
+  margin-right: 200px;
+}
 /*FOOTER PAGE CSS END*/
 
 @keyframes fallingdown {

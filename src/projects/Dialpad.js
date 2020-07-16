@@ -7,6 +7,10 @@ import NavElem from '../components/projectNav';
 import BackButton from '../components/BackButton';
 import Home from "../contents/Home";
 
+import PropTypes from 'prop-types';
+import { render } from 'react-dom';
+import Gallery from 'react-grid-gallery';
+
 import v101 from "../img/dialpad/dp_illustrations/v1/v1_01.png";
 import v102 from "../img/dialpad/dp_illustrations/v1/v1_02.png";
 import v103 from "../img/dialpad/dp_illustrations/v1/v1_03.png";
@@ -48,7 +52,21 @@ class Dialpad extends React.Component {
   componentDidMount() {
         window.scrollTo(0, 0);
     }
-    
+
+  constructor(props){
+        super(props);
+
+        this.state = {
+            gallery1: this.props.gallery1,
+            gallery2: this.props.gallery2,
+            gallery3: this.props.gallery3,
+            objects: this.props.objects,
+            social: this.props.social,
+            datasheets: this.props.datasheets
+        };
+
+    } 
+
   render() {
     return (
       <div className="projectContainer">
@@ -75,41 +93,36 @@ class Dialpad extends React.Component {
               <p>We started with trying out a wide variety of illustrations, using Dialpad’s new brand colors.  
               Below are some of my explorations.</p>
               
-              <div className="col-container buffer">
-                <div className="column one">
-                  <img src={v101}></img>
-                  <img src={v102}></img>
-                  <img src={v103}></img>
-                  <img src={v104}></img>
-                </div>
-                <div className="column one">
-                  <img src={v105}></img>
-                  <img src={v106}></img>
-                  <img src={v107}></img>
-                  <img src={v108}></img> 
-                </div>
-                <div className="column zero">
-                  <img src={v1phone1}></img>
-                  <img src={v1phone2}></img>
-                  <img src={v1phone3}></img>
-                </div>
-              </div>
+              <div className="gallery buffer" style={{
+                    display: "block",
+                    minHeight: "1px",
+                    width: "100%",
+                    overflow: "auto"}}>
+               <Gallery
+                images={this.state.gallery1}
+                enableLightbox={true}
+                enableImageSelection={false}
+                margin={0}
+                rowHeight={200}/>
+             </div>
 
               <p>After reviewing the first iteration, it was decided that we wanted to go with styles that had 
                few complex shapes, but still reflected the business aspect of Dialpad.</p>
               <p>The team liked my simple geometric person that could easily be broken down into icons, but felt that it looked more childish than business-like.  
                 I worked on adding more shape and dimension to those characters in my second iteration.</p>
 
-              <div className="col-container buffer">
-                <div className="column two">
-                  <img src={v201}></img>
-                  <img src={v202}></img>
-                </div>
-                <div className="column two">
-                  <img src={v203}></img>
-                  <img src={v204}></img>
-                </div>
-              </div>
+              <div className="gallery buffer" style={{
+                    display: "block",
+                    minHeight: "1px",
+                    width: "100%",
+                    overflow: "auto"}}>
+               <Gallery
+                images={this.state.gallery2}
+                enableLightbox={true}
+                enableImageSelection={false}
+                margin={0}
+                rowHeight={400}/>
+             </div>
 
               <div className="title2">Final Iteration</div>
               <p>The final iteration featured simple characters that were simple and plain but could easily be spruced up with 
@@ -120,29 +133,33 @@ class Dialpad extends React.Component {
               <p> I worked on making the characters seem more life-like and interacting with their phones, and explored the 
               different representations of the style.</p>
 
-              <div className="row-container buffer">
-                <div className="row rone">
-                  <img src={final02}></img>
-                  <img src={final03}></img>
-                  <img src={final04}></img>
-                </div>
-                <div className="row rtwo">
-                  <img src={final05}></img>
-                </div>
-              </div>
+              <div className="gallery buffer" style={{
+                    display: "block",
+                    minHeight: "1px",
+                    width: "100%",
+                    overflow: "auto"}}>
+               <Gallery
+                images={this.state.gallery3}
+                enableLightbox={true}
+                enableImageSelection={false}
+                margin={0}
+                rowHeight={330}/>
+             </div>
 
               <p>I also created some additional illustrations of objects to go with the people.</p>
 
-              <div className="col-container buffer">
-                <div className="column two">
-                  <img src={object01}></img>
-                  <img src={object02}></img>
-                </div>
-                <div className="column two">
-                  <img src={object03}></img>
-                  <img src={object04}></img>
-                </div>
-              </div>
+              <div className="gallery buffer" style={{
+                    display: "block",
+                    minHeight: "1px",
+                    width: "100%",
+                    overflow: "auto"}}>
+               <Gallery
+                images={this.state.objects}
+                enableLightbox={true}
+                enableImageSelection={false}
+                margin={0}
+                rowHeight={400}/>
+             </div>
 
               <p>After I left the internship, the other intern and the rest of the team continued to develop the style and create different versions to use on social media.  
               It is now being used on all of Dialpad’s social media platforms including LinkedIn, Instagram, and Facebook.</p>
@@ -152,30 +169,33 @@ class Dialpad extends React.Component {
               <p>In addition to creating a new illustration style, I also...</p>
               <div className="title2">Designed social media banners, cards, and assets using Sketch and Illustrator</div>
 
-              <div className="row-container buffer">
-                <div className="row rone">
-                  <img src={social01}></img>
-                </div>
-                <div className="row rone">
-                  <img src={social02}></img>
-                </div>
-                <div className="row rthree">
-                  <img src={social03}></img>
-                  <img src={social04}></img>
-                </div>
-              </div>
+              <div className="gallery buffer" style={{
+                    display: "block",
+                    minHeight: "1px",
+                    width: "100%",
+                    overflow: "auto"}}>
+               <Gallery
+                images={this.state.social}
+                enableLightbox={true}
+                enableImageSelection={false}
+                margin={0}
+                rowHeight={220}/>
+             </div>
 
               <div className="title2">Formatted and created illustrations for internal and customer-facing data sheets using InDesign</div>
 
-               <div className="row-container buffer">
-                <div className="row rtwo">
-                  <img src={datasheet1}></img>
-                  <img src={datasheet2}></img>
-                </div>
-                <div className="row rfour">
-                  <img src={datasheet3}></img>
-                </div>
-              </div>
+               <div className="gallery buffer" style={{
+                    display: "block",
+                    minHeight: "1px",
+                    width: "100%",
+                    overflow: "auto"}}>
+               <Gallery
+                images={this.state.datasheets}
+                enableLightbox={true}
+                enableImageSelection={false}
+                margin={0}
+                rowHeight={500}/>
+             </div>
 
               <div className="title2">And completed some small, fun tasks where I got to play a little bit more.</div>
 
@@ -197,5 +217,155 @@ class Dialpad extends React.Component {
     );
   }
 }
+Dialpad.propTypes = {
+    images: PropTypes.arrayOf(
+        PropTypes.shape({
+            src: PropTypes.string.isRequired,
+            thumbnail: PropTypes.string.isRequired,
+            srcset: PropTypes.array,
+            caption: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.element
+            ]),
+            thumbnailWidth: PropTypes.number.isRequired,
+            thumbnailHeight: PropTypes.number.isRequired
+        })
+    ).isRequired
+};
+
+Dialpad.defaultProps = {
+    gallery1: [
+        {
+            src: v101,
+            thumbnail: v101
+        },
+        {
+            src: v102,
+            thumbnail: v102
+        },
+        {
+            src: v103,
+            thumbnail: v103
+        },
+        {
+            src: v104,
+            thumbnail: v104
+        },
+        {
+            src: v105,
+            thumbnail: v105
+        },
+        {
+            src: v106,
+            thumbnail: v106
+        },
+        {
+            src: v107,
+            thumbnail: v107
+        },
+        {
+            src: v108,
+            thumbnail: v108
+        },
+        {
+            src: v1phone1,
+            thumbnail: v1phone1
+        },
+        {
+            src: v1phone2,
+            thumbnail: v1phone2
+        },
+        {
+            src: v1phone3,
+            thumbnail: v1phone3
+        },  
+    ],
+    gallery2: [
+        {
+            src: v201,
+            thumbnail: v201
+        },
+        {
+            src: v202,
+            thumbnail: v202
+        },
+        {
+            src: v203,
+            thumbnail: v203
+        },
+        {
+            src: v204,
+            thumbnail: v204
+        }   
+    ],
+    gallery3: [
+        {
+            src: final05,
+            thumbnail: final05
+        },   
+        {
+            src: final02,
+            thumbnail: final02
+        },
+        {
+            src: final03,
+            thumbnail: final03
+        },
+        {
+            src: final04,
+            thumbnail: final04
+        }
+    ],
+    objects: [
+        {
+            src: object01,
+            thumbnail: object01
+        },   
+        {
+            src: object02,
+            thumbnail: object02
+        },
+        {
+            src: object03,
+            thumbnail: object03
+        },
+        {
+            src: object04,
+            thumbnail: object04
+        }
+    ],
+    social: [
+        {
+            src: social01,
+            thumbnail: social01
+        },   
+        {
+            src: social02,
+            thumbnail: social02
+        },
+        {
+            src: social03,
+            thumbnail: social03
+        },
+        {
+            src: social04,
+            thumbnail: social04
+        }
+    ],
+    datasheets: [
+        {
+            src: datasheet1,
+            thumbnail: datasheet1
+        },   
+        {
+            src: datasheet2,
+            thumbnail: datasheet2
+        },
+        {
+            src: datasheet3,
+            thumbnail: datasheet3
+        }
+    ]
+};
 
 export default Dialpad;
