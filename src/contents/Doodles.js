@@ -46,18 +46,7 @@ class Doodles extends Component {
     } 
 	render() {
 	    return ( 
-	    	 <div className="doodlegallery" style={{
-                    display: "block",
-                    minHeight: "1px",
-                    width: "100%",
-                    overflow: "auto"}}>
-	             // <Gallery
-		            // images={this.state.images}
-		            // enableLightbox={true}
-		            // enableImageSelection={false}
-		            // margin={0}
-		            // rowHeight={290}/>
-             </div>
+	    	 <div></div>
 	    );
   	}
 }
