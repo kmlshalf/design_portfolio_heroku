@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { render } from 'react-dom';
 import Gallery from 'react-grid-gallery';
 
-import hug1 from '../img/illustrations/anotherhug.png';
 import cat from '../img/illustrations/cat.png';
 import chair from '../img/illustrations/chair.png';
 import devan from '../img/illustrations/Devan.png';
@@ -80,10 +79,6 @@ Doodles.propTypes = {
 
 Doodles.defaultProps = {
     images: [
-        {
-            src: hug1,
-            thumbnail: hug1,
-        },
         {
             src: cat,
             thumbnail: cat
